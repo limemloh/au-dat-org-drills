@@ -1,13 +1,16 @@
 * Regulære Udtryk
+
 ** Regulære Udtryk                                                    :drill:
    Hvornår er et sprog regulært?
 *** Svaret 
     Et sprog $S$ er regulær, hvis der eksisterer et regulært udtryk således at $L(r) = S$.
 
+
 ** Regulære Udtryk                                                    :drill:
    Helt generelt hvad er regulære udtryk?
 *** Svaret 
     Regulære udtryk er en formalisme, vi bruger til at beskrive de regulære Sprog.
+
 
 ** Regulære Udtryk                                                    :drill:
    Hvad er definitionen på regulære udtryk?
@@ -21,6 +24,7 @@
     L(r*)        &= (L(r))*
     \end{align*}
 
+
 * Endelige Automater
 
 ** Endelige Automater                                                 :drill:
@@ -31,7 +35,6 @@
 
 ** Endelige Automater                                                 :drill:
    Hvordan defineres en FA som en 5-tuppel?
-
 *** Svaret
     \begin{align*}
     M &= (Q, \Sigma, q_0, A, \delta)
@@ -41,24 +44,94 @@
 
     \begin{align*}
     Q      :& \texttt{ En mængde af tilstande} \\
-    \Sigma :& \texttt{ Alfabetet }  \\
-    q_0    :& \texttt{ Starttilstand } \\
+    \Sigma :& \texttt{ Alfabetet bestående af en endelig mængde symboler}  \\
+    q_0    :& \texttt{ Starttilstand } q_0 \in Q\\
     A      :& \texttt{ En mængde af accepttilstande og }A \subseteq Q         \\
     \delta :&\texttt{ En transitions funktion } Q \times \Sigma \rightarrow Q 
     \end{align*}
 
+
+** Deterministiske automater                                          :drill:
+   :PROPERTIES:
+   :DRILL_CARD_TYPE: hide1cloze
+   :END:
+   [Den udvidede transitionsfunktion] har signaturen [$\delta^* : Q \times \Sigma^* \to Q$]
+
+
 * Lukkethedsegenskaber
 
 * Nondeterministiske Automater
-  
+
+** Lambda-lukning                                                     :drill:
+   Lambda-lukning $\Lambda(S)$ er defineret som ...
+*** Formelt
+    \begin{align*}
+    S \subseteq &\Lambda(S) \\
+    \forall q \in & \Lambda(S), \delta(q, \Lambda) \subseteq \Lambda(S)
+    \end{align*}
+
+** Nondeterminitiske Automater                                        :drill:
+   :PROPERTIES:
+   :ID:       7e402dff-c82f-4fe4-a88c-36d920cb447c
+   :END:
+   Definitionen af den udvidede transitionsfunktion for en non-deterministisk FA
+*** Formelt
+    \begin{align*}
+    \delta^*(q,   \lambda) &= \Lambda(\{a\}) \\
+    \delta^*(q, y \sigma) &= \Lambda \left(\bigcup \left \{ \delta(p, \sigma ) | p \in \delta^*(q,y) \right \} \right )     
+    \end{align*}
+
+
+
 * Minimering af Automater
   
 * Begrænsninger af regulære sprog
   
 * Kontekstfri grammatikker
 
-
 * Sprog
+
+** Sprog                                                              :drill:
+   Hvad er et Sprog?
+*** Svaret
+    En mængde af strenge.
+
+** Sprog                                                              :drill:
+   Hvad er et alfabet?
+*** Svaret
+    En endelig mængde af symboler. 
+
+** Sprog                                                              :drill:
+   $x$ er en streng og denoteres som [$x \in \Sigma^*$]
+
+** Sprog                                                              :drill:
+   [$\Lambda$] er symbolet for den tomme streng.
+
+** Sprog                                                              :drill:
+   :PROPERTIES:
+   :ID:       14af0c95-100e-4b01-9ebf-185a73a01ce8
+   :END:
+   Kleene stjerne defineres på et sprog, som [$L^* = \bigcup_{k \in \mathbb{N}} L^k$]
+
+** Relationer                                                         :drill:
+   :PROPERTIES:
+   :DRILL_CARD_TYPE: hide1cloze
+   :END:
+   Relationen $R$ er [symmetrisk], hvis [$\forall x,y \in A, xRy \implies yRx$]
+
+** Relationer                                                         :drill:
+   :PROPERTIES:
+   :DRILL_CARD_TYPE: hide1cloze
+   :END:
+   Relationen $R$ er [refleksiv], hvis [$\forall x \in A, xRx$ ]
+
+** Relationer                                                         :drill:
+   :PROPERTIES:
+   :DRILL_CARD_TYPE: hide1cloze
+   :ID:       2da66eb9-798a-4790-a62c-d31ac672b640
+   :END:
+   Relationen R er [transitiv], hvis [$\forall x,y,z \in A, xRy \land yRz \implies xRz$]
+
 
 ** Sprog Operationer                                                  :drill:
    Formelle definition på foreningsmængden (union)
@@ -68,14 +141,14 @@
     \end{equation*}
 
 ** Sprog Operationer                                                  :drill:
-   Definitionen på Konkatenering
+   Formelle definitionen på Konkatenering
 *** Svaret 
     \begin{equation*}
     L_1 \cup L_2 = \{xy \in \Sigma^* | x \in L_1 \land y \in L_2 \}
     \end{equation*}
 
 ** Sprog Operationer                                                  :drill:
-   Definitionen på Kleene stjerne
+   Formelle definitionen på Kleene stjerne
 *** Svaret 
     \begin{equation*}
     L^* = \bigcup_{i=0}^{\infty} L^i , L^k = LL...L, L^0 = \{ \Lambda \}
