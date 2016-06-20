@@ -1,18 +1,25 @@
 * Regulære Udtryk
-
+  
 ** Regulære Udtryk                                                    :drill:
+   :PROPERTIES:
+   :ID:       5952e9e6-3fed-4b2f-9ca7-734b5e13b173
+   :END:
    Hvornår er et sprog regulært?
 *** Svaret 
-    Et sprog $S$ er regulær, hvis der eksisterer et regulært udtryk således at $L(r) = S$.
-
+    Et sprog $$S$$ er regulær, hvis der eksisterer et regulært udtryk således at $$L(r) = S$$.
 
 ** Regulære Udtryk                                                    :drill:
+   :PROPERTIES:
+   :ID:       2eda9ca3-ba1e-4049-a7b7-e0ecd255128d
+   :END:
    Helt generelt hvad er regulære udtryk?
 *** Svaret 
     Regulære udtryk er en formalisme, vi bruger til at beskrive de regulære Sprog.
 
-
 ** Regulære Udtryk                                                    :drill:
+   :PROPERTIES:
+   :ID:       8523fe42-faf6-4707-a39b-704388642794
+   :END:
    Hvad er definitionen på regulære udtryk?
 *** Svaret
     \begin{align*}
@@ -24,16 +31,22 @@
     L(r*)        &= (L(r))*
     \end{align*}
 
-
 * Endelige Automater
 
 ** Endelige Automater                                                 :drill:
+   :PROPERTIES:
+   :ID:       22717a8d-83d6-4119-b2ea-9d73d3ef3284
+   :END:
    Hvad er en (Ikke formel) generel definition på FA? 
 *** Svaret
+    :PROPERTIES:
+    :END:
     En abstrakt maskine til at teste om en given streng er med i et Sprog.
 
-
 ** Endelige Automater                                                 :drill:
+   :PROPERTIES:
+   :ID:       352a999d-57aa-46ff-84f0-350ee9dae088
+   :END:
    Hvordan defineres en FA som en 5-tuppel?
 *** Svaret
     \begin{align*}
@@ -50,20 +63,21 @@
     \delta :&\texttt{ En transitions funktion } Q \times \Sigma \rightarrow Q 
     \end{align*}
 
-
 ** Deterministiske automater                                          :drill:
    :PROPERTIES:
    :DRILL_CARD_TYPE: hide1cloze
+   :ID:       6de3b1db-b5dd-4c91-a6a3-34951e5b5c3e
    :END:
-   [Den udvidede transitionsfunktion] har signaturen [$\delta^* : Q \times \Sigma^* \to Q$]
-
+   [Den udvidede transitionsfunktion] har signaturen [$$\delta^* : Q \times \Sigma^* \to Q$$]
 
 * Lukkethedsegenskaber
 
 * Nondeterministiske Automater
-
 ** Lambda-lukning                                                     :drill:
-   Lambda-lukning $\Lambda(S)$ er defineret som ...
+   :PROPERTIES:
+   :ID:       329865c6-84ed-4d64-8749-026f4445cc59
+   :END:
+   Lambda-lukning $$\Lambda(S)$$ er defineret som ...
 *** Formelt
     \begin{align*}
     S \subseteq &\Lambda(S) \\
@@ -74,14 +88,12 @@
    :PROPERTIES:
    :ID:       7e402dff-c82f-4fe4-a88c-36d920cb447c
    :END:
-   Definitionen af den udvidede transitionsfunktion for en non-deterministisk FA
+   Definitionen af den udvidede transitionsfunktion for en nondeterministisk FA
 *** Formelt
     \begin{align*}
     \delta^*(q,   \lambda) &= \Lambda(\{a\}) \\
     \delta^*(q, y \sigma) &= \Lambda \left(\bigcup \left \{ \delta(p, \sigma ) | p \in \delta^*(q,y) \right \} \right )     
     \end{align*}
-
-
 
 * Minimering af Automater
   
@@ -92,63 +104,85 @@
 * Sprog
 
 ** Sprog                                                              :drill:
+   :PROPERTIES:
+   :ID:       9452919f-dba7-4cf1-923b-9caddaa72069
+   :END:
    Hvad er et Sprog?
 *** Svaret
     En mængde af strenge.
 
 ** Sprog                                                              :drill:
-   Hvad er et alfabet?
-*** Svaret
-    En endelig mængde af symboler. 
+   :PROPERTIES:
+   :ID:       ca233755-0f4b-4d1c-8510-d7a0aefdf01c
+   :DRILL_CARD_TYPE: hide1cloze
+   :END:
+   [Et alfabet] er en [endelig mængde af symboler]
 
 ** Sprog                                                              :drill:
-   $x$ er en streng og denoteres som [$x \in \Sigma^*$]
+   :PROPERTIES:
+   :ID:       84272d35-e221-4b93-ab92-fd536b56451d
+   :END:
+   $$x$$ er en streng og denoteres som [$$x \in \Sigma^*$$]
 
 ** Sprog                                                              :drill:
-   [$\Lambda$] er symbolet for den tomme streng.
+   :PROPERTIES:
+   :ID:       6593ca11-8bc1-445b-b98a-9c821cf75048
+   :END:
+   [$$\Lambda$$] er symbolet for den tomme streng.
 
 ** Sprog                                                              :drill:
    :PROPERTIES:
    :ID:       14af0c95-100e-4b01-9ebf-185a73a01ce8
    :END:
-   Kleene stjerne defineres på et sprog, som [$L^* = \bigcup_{k \in \mathbb{N}} L^k$]
+   Kleene stjerne defineres på et sprog, som [$$L^* = \bigcup_{k \in \mathbb{N}} L^k$$]
 
 ** Relationer                                                         :drill:
    :PROPERTIES:
    :DRILL_CARD_TYPE: hide1cloze
+   :ID:       b40d9ea4-f209-4cb7-94db-401b935b0004
    :END:
-   Relationen $R$ er [symmetrisk], hvis [$\forall x,y \in A, xRy \implies yRx$]
+   Relationen $$R$$ er [symmetrisk], hvis [$$\forall x,y \in A, xRy \implies yRx$$]
 
 ** Relationer                                                         :drill:
    :PROPERTIES:
    :DRILL_CARD_TYPE: hide1cloze
+   :ID:       7cb2bcf5-4d3d-44f4-8f48-d8d595a571a6
    :END:
-   Relationen $R$ er [refleksiv], hvis [$\forall x \in A, xRx$ ]
+   Relationen $$R$$ er [refleksiv], hvis [$$\forall x \in A, xRx$$ ]
 
 ** Relationer                                                         :drill:
    :PROPERTIES:
    :DRILL_CARD_TYPE: hide1cloze
    :ID:       2da66eb9-798a-4790-a62c-d31ac672b640
    :END:
-   Relationen R er [transitiv], hvis [$\forall x,y,z \in A, xRy \land yRz \implies xRz$]
+   Relationen R er [transitiv], hvis [$$\forall x,y,z \in A, xRy \land yRz \implies xRz$$]
 
 
 ** Sprog Operationer                                                  :drill:
-   Formelle definition på foreningsmængden (union)
+   :PROPERTIES:
+   :ID:       645de4a2-14da-4ccb-ad5e-86aa24f60217
+   :END:
+   Formelle definition på foreningsmængden (union) af sprog
 *** Svaret
     \begin{equation*}
     L_1 \cup L_2 = \{x \in \Sigma^* | x \in L_1 \lor x \in L_2 \}
     \end{equation*}
 
 ** Sprog Operationer                                                  :drill:
-   Formelle definitionen på Konkatenering
+   :PROPERTIES:
+   :ID:       991592b9-8dd0-4f60-97d0-341365b59bc1
+   :END:
+   Formelle definition på konkatenering af sprog
 *** Svaret 
     \begin{equation*}
     L_1 \cup L_2 = \{xy \in \Sigma^* | x \in L_1 \land y \in L_2 \}
     \end{equation*}
 
 ** Sprog Operationer                                                  :drill:
-   Formelle definitionen på Kleene stjerne
+   :PROPERTIES:
+   :ID:       038e0ca7-52a1-48a8-bfdc-78ed9a826274
+   :END:
+   Formelle definition på Kleene stjerne
 *** Svaret 
     \begin{equation*}
     L^* = \bigcup_{i=0}^{\infty} L^i , L^k = LL...L, L^0 = \{ \Lambda \}
