@@ -1,0 +1,82 @@
+* Regulære Udtryk
+** Regulære Udtryk                                                    :drill:
+   Hvornår er et sprog regulært?
+*** Svaret 
+    Et sprog $S$ er regulær, hvis der eksisterer et regulært udtryk således at $L(r) = S$.
+
+** Regulære Udtryk                                                    :drill:
+   Helt generelt hvad er regulære udtryk?
+*** Svaret 
+    Regulære udtryk er en formalisme, vi bruger til at beskrive de regulære Sprog.
+
+** Regulære Udtryk                                                    :drill:
+   Hvad er definitionen på regulære udtryk?
+*** Svaret
+    \begin{align*}
+    L(\emptyset) &= \emptyset          \\
+    L(\Lambda)   &= \Lambda            \\
+    L(a)         &= a | a \in \Sigma   \\
+    L(r_1 + r_2) &= L(r_1) \cup L(r_2) \\
+    L(r_1 r_2)   &= L(r_1) L(r_2)      \\
+    L(r*)        &= (L(r))*
+    \end{align*}
+
+* Endelige Automater
+
+** Endelige Automater                                                 :drill:
+   Hvad er en (Ikke formel) generel definition på FA? 
+*** Svaret
+    En abstrakt maskine til at teste om en given streng er med i et Sprog.
+
+
+** Endelige Automater                                                 :drill:
+   Hvordan defineres en FA som en 5-tuppel?
+
+*** Svaret
+    \begin{align*}
+    M &= (Q, \Sigma, q_0, A, \delta)
+    \end{align*}
+
+    Hvor
+
+    \begin{align*}
+    Q      :& \texttt{ En mængde af tilstande} \\
+    \Sigma :& \texttt{ Alfabetet }  \\
+    q_0    :& \texttt{ Starttilstand } \\
+    A      :& \texttt{ En mængde af accepttilstande og }A \subseteq Q         \\
+    \delta :&\texttt{ En transitions funktion } Q \times \Sigma \rightarrow Q 
+    \end{align*}
+
+* Lukkethedsegenskaber
+
+* Nondeterministiske Automater
+  
+* Minimering af Automater
+  
+* Begrænsninger af regulære sprog
+  
+* Kontekstfri grammatikker
+
+
+* Sprog
+
+** Sprog Operationer                                                  :drill:
+   Formelle definition på foreningsmængden (union)
+*** Svaret
+    \begin{equation*}
+    L_1 \cup L_2 = \{x \in \Sigma^* | x \in L_1 \lor x \in L_2 \}
+    \end{equation*}
+
+** Sprog Operationer                                                  :drill:
+   Definitionen på Konkatenering
+*** Svaret 
+    \begin{equation*}
+    L_1 \cup L_2 = \{xy \in \Sigma^* | x \in L_1 \land y \in L_2 \}
+    \end{equation*}
+
+** Sprog Operationer                                                  :drill:
+   Definitionen på Kleene stjerne
+*** Svaret 
+    \begin{equation*}
+    L^* = \bigcup_{i=0}^{\infty} L^i , L^k = LL...L, L^0 = \{ \Lambda \}
+    \end{equation*}
