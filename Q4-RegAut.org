@@ -165,6 +165,13 @@ x
    :END:
    Hvis $$h$$ opfylder [$$ h(xy) = h(x)h(y) $$] og kaldes det en [homomorfi]
 
+** Sprog                                                              :drill:
+   :PROPERTIES:
+   :DRILL_CARD_TYPE: hide1cloze
+   :ID:       3a00568a-8be0-4736-a19b-10cede3bd805
+   :END:
+   $$x$$ og $$y$$ er [skelnelige] mht. $$L$$ hvis [$$ \exists z \in \Sigma^*: (xz \in L \land yz \notin L) \lor (xz \notin L \land yz \in L) $$]
+
 ** Relationer                                                         :drill:
    :PROPERTIES:
    :DRILL_CARD_TYPE: hide1cloze
@@ -215,3 +222,15 @@ x
     \begin{equation*}
     L^* = \bigcup_{i=0}^{\infty} L^i , L^k = LL...L, L^0 = \{ \Lambda \}
     \end{equation*}
+
+** Sprog Operationer                                                  :drill:
+   :PROPERTIES:
+   :ID:       df016613-1b45-4f71-affc-9b7e6d806737
+   :END:
+Sproget $$ L\cdot\{\Lambda\} = \{\Lambda\}\cdot L = $$ [$$L$$]
+
+** Sprog Operationer                                                  :drill:
+   :PROPERTIES:
+   :ID:       082a0c44-fd84-46ec-b80a-de7cd9e13afd
+   :END:
+Sproget $$ L\cdot\emptyset = \emptyset \cdot L = $$ [$$\emptyset$$]
