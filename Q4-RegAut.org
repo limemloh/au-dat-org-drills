@@ -14,7 +14,7 @@
    :END:
    Helt generelt hvad er regulære udtryk?
 *** Svaret 
-    Regulære udtryk er en formalisme, vi bruger til at beskrive de regulære Sprog.
+    Regulære udtryk er en formalisme, vi bruger til at beskrive de regulære sprog.
 
 ** Regulære Udtryk                                                    :drill:
    :PROPERTIES:
@@ -37,17 +37,17 @@
    :PROPERTIES:
    :ID:       22717a8d-83d6-4119-b2ea-9d73d3ef3284
    :END:
-   Hvad er en (Ikke formel) generel definition på FA? 
+   Hvad er en (ikke formel) generel definition på FA? 
 *** Svaret
     :PROPERTIES:
     :END:
-    En abstrakt maskine til at teste om en given streng er med i et Sprog.
+    En abstrakt maskine til at teste om en given streng er med i et sprog.
 
 ** Endelige Automater                                                 :drill:
    :PROPERTIES:
    :ID:       352a999d-57aa-46ff-84f0-350ee9dae088
    :END:
-   Hvordan defineres en FA som en 5-tuppel?
+   Hvordan defineres en FA som en 5-tupel?
 *** Svaret
     \begin{align*}
     M &= (Q, \Sigma, q_0, A, \delta)
@@ -60,7 +60,7 @@
     \Sigma :& \texttt{ Alfabetet bestående af en endelig mængde symboler}  \\
     q_0    :& \texttt{ Starttilstand } q_0 \in Q\\
     A      :& \texttt{ En mængde af accepttilstande og }A \subseteq Q         \\
-    \delta :&\texttt{ En transitions funktion } Q \times \Sigma \rightarrow Q 
+    \delta :& \texttt{ En transitions funktion } Q \times \Sigma \rightarrow Q 
     \end{align*}
 
 ** Deterministiske automater                                          :drill:
@@ -118,7 +118,12 @@ x
     \end{align*}
 
 * Minimering af Automater
-  
+
+** Myhill-Nerode                                                      :drill:
+   Hvad siger Myhill-Nerode sætningen?
+*** Svaret
+   $$L$$ er regulært hvis og kun hvis $$I_L$$ har endeligt mange ækvivalensklasser.
+
 * Begrænsninger af regulære sprog
   
 * Kontekstfri grammatikker
@@ -129,7 +134,7 @@ x
    :PROPERTIES:
    :ID:       9452919f-dba7-4cf1-923b-9caddaa72069
    :END:
-   Hvad er et Sprog?
+   Hvad er et sprog?
 *** Svaret
     En mængde af strenge.
 
@@ -138,7 +143,7 @@ x
    :ID:       ca233755-0f4b-4d1c-8510-d7a0aefdf01c
    :DRILL_CARD_TYPE: hide1cloze
    :END:
-   [Et alfabet] er en [endelig mængde af symboler]
+   [Et alfabet] er en [endelig mængde af tegn]
 
 ** Sprog                                                              :drill:
    :PROPERTIES:
