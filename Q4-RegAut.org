@@ -118,7 +118,12 @@ x
     \end{align*}
 
 * Minimering af Automater
-  
+
+** Myhill-Nerode                                                      :drill:
+   Hvad siger Myhill-Nerode sætningen?
+*** Svaret
+   $$L$$ er regulært hvis og kun hvis $$I_L$$ har endeligt mange ækvivalensklasser.
+
 * Begrænsninger af regulære sprog
   
 * Kontekstfri grammatikker
