@@ -6,7 +6,7 @@
    :END:
    Hvornår er et sprog regulært?
 *** Svaret 
-    Et sprog $$S$$ er regulær, hvis der eksisterer et regulært udtryk således at $$L(r) = S$$.
+    Et sprog $$S$$ er regulær, hvis der eksisterer et regulært udtryk, således at $$L(r) = S$$.
 
 ** Regulære Udtryk                                                    :drill:
    :PROPERTIES:
@@ -72,7 +72,29 @@
 
 * Lukkethedsegenskaber
 
-* Nondeterministiske Automater
+** Lukkethedsegenskaber                                               :drill:
+   :PROPERTIES:
+   :ID:       1046b27f-a36c-4f98-aea9-3b5b45af6252
+   :END:
+   Antag at sproget $$S$$ ikke er regulært, og sproget $$R$$ er regulært. Så ved vi at 
+sproget $$P$$, hvor $$P = S \cup R$$, [ikke||ikke?] er regulært.
+
+** Lukkethedsegenskaber                                               :drill:
+   :PROPERTIES:
+   :ID:       e5048a38-0f2e-4cdb-8e7a-9814e4eeca2f
+   :END:
+   Lukkethedsegenskaber kan bl.a. bruges til at vise at visse sprog er [ikke-regulære||regulære?]
+
+** Lukkethedsegenskaber                                               :drill:
+   :PROPERTIES:
+   :DRILL_CARD_TYPE: hide1cloze
+   :ID:       eb37442f-e260-4b78-9cb5-5ce7d9f205cf
+   :END:
+   Hvis $$ h: \Sigma_1^* \rightarrow \Sigma_2^* $$ er en [homomorfi] og $$ L \subseteq \Sigma_1^* $$ er et [regulært||regulært?] sprog, så er $$h(L)$$ også [regulært||regulært?]
+
+
+
+* Nondetasderministiske Automater
 ** Lambda-lukning                                                     :drill:
    :PROPERTIES:
    :ID:       329865c6-84ed-4d64-8749-026f4445cc59
@@ -83,7 +105,7 @@
     S \subseteq &\Lambda(S) \\
     \forall q \in & \Lambda(S), \delta(q, \Lambda) \subseteq \Lambda(S)
     \end{align*}
-
+x
 ** Nondeterminitiske Automater                                        :drill:
    :PROPERTIES:
    :ID:       7e402dff-c82f-4fe4-a88c-36d920cb447c
@@ -136,6 +158,13 @@
    :END:
    Kleene stjerne defineres på et sprog, som [$$L^* = \bigcup_{k \in \mathbb{N}} L^k$$]
 
+** Sprog                                                              :drill:
+   :PROPERTIES:
+   :DRILL_CARD_TYPE: hide1cloze
+   :ID:       61ee2017-dc22-4719-9b36-abe349c668f0
+   :END:
+   Hvis $$h$$ opfylder [$$ h(xy) = h(x)h(y) $$] og kaldes det en [homomorfi]
+
 ** Relationer                                                         :drill:
    :PROPERTIES:
    :DRILL_CARD_TYPE: hide1cloze
@@ -156,7 +185,6 @@
    :ID:       2da66eb9-798a-4790-a62c-d31ac672b640
    :END:
    Relationen R er [transitiv], hvis [$$\forall x,y,z \in A, xRy \land yRz \implies xRz$$]
-
 
 ** Sprog Operationer                                                  :drill:
    :PROPERTIES:
