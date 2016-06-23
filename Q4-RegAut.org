@@ -39,8 +39,6 @@
    :END:
    Hvad er en (ikke formel) generel definition på FA? 
 *** Svaret
-    :PROPERTIES:
-    :END:
     En abstrakt maskine til at teste om en given streng er med i et sprog.
 
 ** Endelige Automater                                                 :drill:
@@ -90,9 +88,37 @@ sproget $$P$$, hvor $$P = S \cup R$$, [ikke||ikke?] er regulært.
    :DRILL_CARD_TYPE: hide1cloze
    :ID:       eb37442f-e260-4b78-9cb5-5ce7d9f205cf
    :END:
-   Hvis $$ h: \Sigma_1^* \rightarrow \Sigma_2^* $$ er en [homomorfi] og $$ L \subseteq \Sigma_1^* $$ er et [regulært||regulært?] sprog, så er $$h(L)$$ også [regulært||regulært?]
+   Hvis $$ h: \Sigma_1^* \rightarrow \Sigma_2^* $$ er en [homomorfi] og $$ L \subseteq \Sigma_1^* $$ er et [regulært||regulært?] sprog, så er $$h(L)$$ [regulært||regulært?]
 
+** Lukkethedsegenskaber                                               :drill:
+   :PROPERTIES:
+   :ID:       527b3f9e-0b78-4963-af65-5fe53f0d920c
+   :END:
+   CFG er [lukket||lukket?] under forening (union).
 
+** Lukkethedsegenskaber                                               :drill:
+   :PROPERTIES:
+   :ID:       4f2a1a81-48de-4260-98d1-62437350eac3
+   :END:
+   CFG er [lukket||lukket?] under konkatenering.
+
+** Lukkethedsegenskaber                                               :drill:
+   :PROPERTIES:
+   :ID:       c965e2ee-9968-4ba7-8b14-4c897230bef1
+   :END:
+   CFG er [lukket||lukket?] under kleene.
+
+** Lukkethedsegenskaber                                               :drill:
+   :PROPERTIES:
+   :ID:       a9c0df98-7ae7-451c-aead-e39e49d055b3
+   :END:
+   CFG er [ikke-lukket||lukket?] under snit.
+
+** Lukkethedsegenskaber                                               :drill:
+   :PROPERTIES:
+   :ID:       a5160510-8d34-4d95-94c1-5d0067bbe675
+   :END:
+   CFG er [ikke-lukket||lukket?] under komplement.
 
 * Nondetasderministiske Automater
 ** Lambda-lukning                                                     :drill:
@@ -105,7 +131,7 @@ sproget $$P$$, hvor $$P = S \cup R$$, [ikke||ikke?] er regulært.
     S \subseteq &\Lambda(S) \\
     \forall q \in & \Lambda(S), \delta(q, \Lambda) \subseteq \Lambda(S)
     \end{align*}
-x
+
 ** Nondeterminitiske Automater                                        :drill:
    :PROPERTIES:
    :ID:       7e402dff-c82f-4fe4-a88c-36d920cb447c
@@ -113,16 +139,19 @@ x
    Definitionen af den udvidede transitionsfunktion for en nondeterministisk FA
 *** Formelt
     \begin{align*}
-    \delta^*(q,   \lambda) &= \Lambda(\{a\}) \\
+    \delta^*(q,   \Lambda) &= \Lambda(\{a\}) \\
     \delta^*(q, y \sigma) &= \Lambda \left(\bigcup \left \{ \delta(p, \sigma ) | p \in \delta^*(q,y) \right \} \right )     
     \end{align*}
 
 * Minimering af Automater
 
 ** Myhill-Nerode                                                      :drill:
+   :PROPERTIES:
+   :ID:       e5f9c4a5-00ed-471a-b5f1-63d92609f3c6
+   :END:
    Hvad siger Myhill-Nerode sætningen?
 *** Svaret
-   $$L$$ er regulært hvis og kun hvis $$I_L$$ har endeligt mange ækvivalensklasser.
+   $$L$$ er regulært hvis og kun hvis ækvivalensrelationen $$I_L$$ over $$\Sigma$$ har endeligt mange ækvivalensklasser.
 
 * Begrænsninger af regulære sprog
   
@@ -168,7 +197,7 @@ x
    :DRILL_CARD_TYPE: hide1cloze
    :ID:       61ee2017-dc22-4719-9b36-abe349c668f0
    :END:
-   Hvis $$h$$ opfylder [$$ h(xy) = h(x)h(y) $$] og kaldes det en [homomorfi]
+   Hvis $$h$$ opfylder [$$ h(xy) = h(x)h(y) $$], så kaldes det en [homomorfi]
 
 ** Sprog                                                              :drill:
    :PROPERTIES:
