@@ -112,7 +112,7 @@ sproget $$P$$, hvor $$P = S \cup R$$, [ikke||ikke?] er regulært.
    :PROPERTIES:
    :ID:       a9c0df98-7ae7-451c-aead-e39e49d055b3
    :END:
-   CFG er [ikke-lukket||lukket?] under snit.
+   CFG er [ikke-lukket||lukket?] under snit (fællesmængde).
 
 ** Lukkethedsegenskaber                                               :drill:
    :PROPERTIES:
@@ -156,6 +156,79 @@ sproget $$P$$, hvor $$P = S \cup R$$, [ikke||ikke?] er regulært.
 * Begrænsninger af regulære sprog
   
 * Kontekstfri grammatikker
+
+** Kontekstfri grammatikker                                           :drill:
+   :PROPERTIES:
+   :ID:       7e8ec4d6-5268-4c96-b556-9de5bcc622a9
+   :END:
+   Hvornår er et sprog $$L \subseteq \Sigma^* $$ kontekstfrit?
+*** Svaret
+    Hvis og kun hvis der findes en CFG $$G$$, hvor $$L(G)=L$$.
+
+** Kontekstfri grammatikker                                           :drill:
+   :PROPERTIES:
+   :ID:       f6f078f2-42cc-42a9-bba6-fd38965e0cbd
+   :END:
+   Hvordan defineres en CFG som en 4-tupel?
+*** Svaret
+    $$ G = (V, \Sigma, S, P)  $$
+    
+    Hvor
+
+    \begin{align*}
+    V      :& \texttt{ Endelig mængde af nonterminal-symboler } \\
+    \Sigma :& \texttt{ Alfabetet bestående af en endelig mængde terminal-symboler}  \\
+    S      :& \texttt{ Startsymbol } S \in V \\
+    P      :& \texttt{ En endelig mængde af produktioner } A \rightarrow \alpha, A \in V \land \alpha \in (V \cup \Sigma)^*
+    \end{align*}
+** Kontekstfri grammatikker                                           :drill:
+   :PROPERTIES:
+   :ID:       45a96394-ddf2-4bb7-b28c-a24a771d9d1a
+   :END:
+   Membership $$(x\in L(G)?)$$ for en CFG er [afgørlig||afgørlig?]
+
+** Kontekstfri grammatikker                                           :drill:
+   :PROPERTIES:
+   :ID:       dc740043-55ff-4c85-a901-17140357976a
+   :END:
+   Emptiness $$(L(G) = \emptyset?)$$ for en CFG er [afgørlig||afgørlig?]
+
+** Kontekstfri grammatikker                                           :drill:
+   :PROPERTIES:
+   :ID:       99e9ffdd-2d4f-4f2c-855c-d4023c95adbe
+   :END:
+   Finiteness (er $$L(G)$$ endeligt?) for en CFG er [afgørlig||afgørlig?]
+
+** Kontekstfri grammatikker                                           :drill:
+   :PROPERTIES:
+   :ID:       73b75b8a-b74a-4a2a-95e7-5478fe6c6878
+   :END:
+   Subset $$(L(G_1)\subseteq L(G_2)?)$$ for en CFG er [uafgørlig||afgørlig?]
+
+** Kontekstfri grammatikker                                           :drill:
+   :PROPERTIES:
+   :ID:       6ac63179-8b33-497a-b58c-270f767adf53
+   :END:
+   Equality $$(L(G_1) = L(G_2)?)$$ for en CFG er [uafgørlig||afgørlig?]
+
+** Kontekstfri grammatikker                                           :drill:
+   :PROPERTIES:
+   :ID:       5e340a0c-1ecd-4ada-8736-32aea257cfc5
+   :END:
+   Totality $$(L(G) = \Sigma^*? )$$ for en CFG er [uafgørlig||afgørlig?]
+
+** Kontekstfri grammatikker                                           :drill:
+   :PROPERTIES:
+   :ID:       3e8fd3d1-de2e-4e57-8a46-895c15b3ca53
+   :END:
+   Tvetydighed for en CFG er [uafgørlig||afgørlig?]
+
+** Kontekstfri grammatikker                                           :drill:
+   :PROPERTIES:
+   :ID:       cce67c5f-bb9c-434d-a1b1-96ef76be1467
+   :END:
+   Regularitet for en CFG er [uafgørlig||afgørlig?]
+
 
 * Sprog
 
