@@ -1,0 +1,117 @@
+* Beregnelighed
+
+** Spørgsmål                                                          :drill:
+   :PROPERTIES:
+   :ID:       2a0b746e-9611-40cc-a332-88693ae80c14
+   :END:
+Skriv tuplen for en turingmaskine
+
+*** Svar
+\[
+T = (Q, \Sigma, \Gamma, q_0, \delta)
+\]
+
+** Spørgsmål                                                          :drill:
+   :PROPERTIES:
+   :ID:       49f41bcd-9402-4699-a8bb-8497b7a516ef
+   :END:
+Hvad er signaturen for en turingmaskines transitionsfunktion?
+*** Svar
+\[
+\delta: Q \times (\Gamma \cup \{\Delta\}) \rightarrow (Q \cup \{h_a,
+h_r\}) \times (\Gamma \cup \{\Delta\}) \times \{R, L, S\}
+\]
+
+** Spørgsmål                                                          :drill:
+   :PROPERTIES:
+   :ID:       d06797b5-c6ad-4e0f-ac51-c1a0f89396dc
+   :END:
+Hvis $T$ er en turing maskine hvordan er dens sprog så defineret
+*** Svar
+\[
+L(T) = \{x = \Sigma^{*} \mid x \text{ er accepteret af } T \}
+\]
+
+** Spørgsmål                                                          :drill:
+   :PROPERTIES:
+   :ID:       142135ea-cb83-4713-b9ef-c08bf9111f43
+   :END:
+Hvad vil det sige at en turingmaskine /bestemmer/ et sprog? (engelsk: decides)
+*** Svar
+At turingmaskinen beregner den karakteristiske funktion $\chi_L:
+\Sigma^{*} \rightarrow \{0, 1\}$. Dvs. at turingmaskinen altid halter,
+den giver altid et svar.
+
+** Spørgsmål                                                          :drill:
+   :PROPERTIES:
+   :ID:       5b478cd7-5a0e-42d9-9170-2924c7a02c48
+   :END:
+Kan en turingmaskine accepterer et rekursivt enumerabelt sprog, der ikke
+er rekursivt?
+*** Svar
+Ja.
+
+** Spørgsmål                                                          :drill:
+   :PROPERTIES:
+   :ID:       3140fe75-fb59-4fed-a6b9-528ad1a7d543
+   :END:
+Kan en turingmaskine bestemme et rekursivt enumerabelt sprog, der ikke
+er rekursivt?
+*** Svar
+Nej.
+
+** Spørgsmål                                                          :drill:
+   :PROPERTIES:
+   :ID:       41ca99d7-fb79-45bc-ad7a-c65e9cb02729
+   :END:
+Hvis der findes en turingmaskine der enumererer strengene i et sprog i
+canonical order er sproget [rekursivt] og det er ikke [rekursivt enumerabelt].
+
+** Spørgsmål
+Er et sprog nødvendigvis tælleligt?
+*** Svar
+Ja. Alle sprog er tællelige.
+
+** Spørgsmål
+Hvordan kan man bevise at en mængde er tællelig?
+*** Svar
+Ved at lave en bijektion fra de naturlige tal til den pågældende mængde.
+
+** Spørgsmål
+$NSA$ er en turingmaskine. Hvordan er den defineret?
+*** Svar
+Som en en turingmaskine der ikke accepterer sin egen encoding.
+\[
+NSA = \{ e(T) \mid T \text{ er en } TM \text{ og } e(T) \not\in L(T) \}
+\]
+
+** Spørgsmål
+$SA$ er en turingmaskine. Hvordan er den defineret?
+*** Svar
+Som en en turingmaskine der accepterer sin egen encoding.
+\[
+SA = \{ e(T) \mid T \text{ er en } TM \text{ og } e(T) \in L(T) \}
+\]
+
+
+* Logik                                                               :drill:
+  :PROPERTIES:
+  :ID:       57f2aeb5-d78d-41ab-bdc6-6939b7d1374d
+  :END:
+
+** Spørgsmål                                                          :drill:
+   :PROPERTIES:
+   :ID:       4cfcb437-5cc9-424a-8be2-368fc72ccd44
+   :END:
+Hvad betyder /soundness/ for et logisk system?
+
+*** Svar
+At alt hvad der kan bevises er sandt.
+
+** Spørgsmål                                                          :drill:
+   :PROPERTIES:
+   :ID:       2c167b19-ac1f-40bb-86bb-29e92a4b261d
+   :END:
+Hvad betyder /completeness/ for et logisk system?
+*** Svar
+At alt hvad der er sandt kan bevises.
